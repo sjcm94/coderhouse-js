@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(24deg, rgba(220, 248, 250, 1) 0%, rgba(165, 250, 196, 1) 50%, rgba(252, 246, 187, 1) 100%);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.todos {
+    max-width: 500px;
+    background: #ffffff;
+    margin: 40px 0 20px 0;
+    padding: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px #ffffff;
+}
+
+.elemento {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(117, 255, 167, 0.8);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    align-items: center;
+}
+
+.elemento p {
+    flex: auto;
+}
+
+.elemento input {
+    cursor: pointer;
+}
+
+.elemento.hecho {
+    background: rgb(228, 227, 227);
+}
+
+.elemento.hecho p {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+button {
+    border-radius: 5px;
+    border: 0;
+    background: #ffffff;
+    padding: 5px 10px;
+}
+
+button:hover {
+    box-shadow: 0 0 20px #ffffff;
+    cursor: pointer;
+}
+
+span {
+    font-style: italic;
+}
+
+.registro {
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px #ffffff;
+}
+
+.registro input {
+    background: rgba(255, 255, 255, 0.9);
+    width: 80%;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.registro button {
+    width: 17%;
+}
