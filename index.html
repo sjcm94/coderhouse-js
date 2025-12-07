@@ -1,31 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Librerias -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <!-- JS -->
+        <script defer src="./js/storage.js"></script>
+        <script defer src="./js/main.js"></script>
+        <link type="text/css" rel="stylesheet" href="./css/estilos.css" />
+        <title>ToDo List</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- JS -->
-    <script defer src="./main.js"></script>
-    <link type="text/css" rel="stylesheet" href="./css/estilos.css">
-    <title>ToDo List</title>
-</head>
+    <body>
+        <h1>ToDo List</h1>
+        <p>
+            Aquí puedes registrar tus tareas, marcarlas como hechas y
+            eliminarlas.
+        </p>
 
-<body>
-    <h1>ToDo List</h1>
-    <p>Aquí puedes registrar tus tareas, marcarlas como hechas y eliminarlas.</p>
+        <div id="todos" class="todos"></div>
+        <p>
+            <span
+                >Describe tu tarea en el campo de texto, luego dale clic al
+                botón "Crear"
+            </span>
+        </p>
 
-
-    <div id="todos" class="todos">
-
-    </div>
-    <p>
-        <span>Describe tu tarea en el campo de texto, luego dale clic al botón "Crear" </span>
-    </p>
-
-    <div class="registro">
-        <input id="entrada" type="text" placeholder="Escribe aquí tu tarea.">
-        <button id="crear">Crear</button>
-    </div>
-</body>
-
+        <div class="registro">
+            <input
+                id="entrada"
+                type="text"
+                placeholder="Escribe aquí tu tarea."
+            />
+            <button id="crear">Crear</button>
+        </div>
+        <div class="ejemplo">
+            <button id="ejemplos">Cargar tareas de ejemplo</button>
+        </div>
+    </body>
 </html>

@@ -1,0 +1,10 @@
+[
+    {
+        "tarea": "Ejemplo de una tarea, puedes eliminarla",
+        "hecho": false
+    },
+    {
+        "tarea": "Otro ejemplo de tarea, puedes eliminarla",
+        "hecho": false
+    }
+]
